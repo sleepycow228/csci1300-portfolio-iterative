@@ -14,51 +14,13 @@ function App() {
 
     <div className="App">
       <Routes>
-        <Route exact path="/" element={
-          <>
-            <a id="top"></a>
-            <NavBar />
-            <AppHeader title="home" />
-            <Home />
-          </>
-        } />
-        <Route path="/csci1300-portfolio-personas" element={
-          <>
-            <a id="top"></a>
-            <NavBar />
-            <AppHeader title="Spin User Assesment" subtitle="Personas & Storyboard" />
-            <Personas />
-            <a href='/#' className="HomeButton">
-              Return To Home</a>
-          </>
-        } />
-        <Route path="/csci1300-portfolio-responsive" element={
-          <>
-            <a id="top"></a>
-            <NavBar />
-            <AppHeader title="MetroNails Redesign" subtitle="Responsive Redesign" />
-            <Responsive />
-            <a href='/#' className="HomeButton">
-              Return To Home</a>
-          </>
-        } />
-        <Route path="/csci1300-portfolio-development" element={
-          <>
-            <a id="top"></a>
-            <NavBar />
-            <AppHeader title="My Super Great Candle Shop" subtitle="Development" />
-            <Development />
-            <a href='/#' className="HomeButton">
-              Return To Home</a>
-          </>
-        } />
-        <Route path="/csci1300-portfolio-iterative" element={
+        <Route path="/" element={
           <>
             <a id="top"></a>
             <NavBar />
             <AppHeader title="Lancey" subtitle="Iterative Design" />
             <IterativeDesign />
-            <a href='/#' className="HomeButton">
+            <a href='https://sleepycow228.github.io/csci-1300-portfolio' className="HomeButton">
               Return To Home</a>
           </>
         } />
@@ -100,8 +62,8 @@ function NavBar() {
   return (
     <div className='NavBar' id='NavBar'>
       <nav>
-        <Link to="/" className='NavBarElement'> Home</Link>
-        <a className='NavBarElement' href="/csci1300-portfolio/#AboutMe"> About Me</a>
+        <a className='NavBarElement' href="https://sleepycow228.github.io/csci-1300-portfolio/#"> Home</a>
+        <a className='NavBarElement' href="https://sleepycow228.github.io/csci-1300-portfolio/#AboutMe"> About Me</a>
       </nav>
     </div>
   )
